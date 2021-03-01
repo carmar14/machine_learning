@@ -1,0 +1,32 @@
+%implements s4_b0_xktcd_Start "C"
+
+%function Start(block, system) Output
+%assign cfgTxt = ""
+%openfile cfgTxt
+%assign localVarDecl = ""
+%assign tlcSetupRuntimeResourcesFcnOfS4B7 = OpaqueTLCBlockFcn("SetupRuntimeResources", 4, 7, 0, 1)
+%assign tlcStartFcnOfS4B0 = OpaqueTLCBlockFcn("Start", 4, 0, 0, 1)
+%assign tlcStartFcnOfS4B7 = OpaqueTLCBlockFcn("Start", 4, 7, 0, 1)
+%if !WHITE_SPACE(tlcSetupRuntimeResourcesFcnOfS4B7)
+/* SetupRuntimeResources for S-Function (predopt): '<S1>/S-Function' */
+%<tlcSetupRuntimeResourcesFcnOfS4B7>\
+%endif
+%if !WHITE_SPACE(tlcStartFcnOfS4B0)
+/* Start for Scope: '<Root>/Scope' */
+%<tlcStartFcnOfS4B0>\
+%endif
+%if !WHITE_SPACE(tlcStartFcnOfS4B7)
+/* Start for S-Function (predopt): '<S1>/S-Function' */
+%<tlcStartFcnOfS4B7>\
+%endif
+%closefile cfgTxt
+%<cfgTxt>
+%endfunction
+%function StartFcnProtoType(block, system) Output
+%assign fcnProtoType = ""
+%openfile fcnProtoType
+static void Start(\
+%assign comma = ""
+%closefile fcnProtoType
+%<SLibCG_SetFcnProtoType(0, 1, fcnProtoType)>
+%endfunction

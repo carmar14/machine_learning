@@ -1,0 +1,1756 @@
+%implements s4_b0_xktcd_TLCInterface "C"
+
+%function getInputAddr_4_7_0_1_0_0(opaqueBlock, block, lcv, ucv, sigIdx, reim) void
+
+%return "&controlador_predictivo_neural_network_B.TmpSignalConversionAtSFunctionI" + SLibCG_ArrayIndexer(ucv, lcv, sigIdx)
+%endfunction
+
+%function getInput_4_7_0_1_0_0(opaqueBlock, block, lcv, ucv, sigIdx, reim) void
+
+%return "controlador_predictivo_neural_network_B.TmpSignalConversionAtSFunctionI" + SLibCG_ArrayIndexer(ucv, lcv, sigIdx)
+%endfunction
+
+%function getOutputAddr_4_7_0_1_0_0(opaqueBlock, block, lcv, ucv, sigIdx, reim) void
+
+%return "&controlador_predictivo_neural_network_B.SFunction"
+%endfunction
+
+%function getOutput_4_7_0_1_0_0(opaqueBlock, block, lcv, ucv, sigIdx, reim) void
+
+%return "controlador_predictivo_neural_network_B.SFunction"
+%endfunction
+
+%function getDWorkAddr_4_7_0_1_0_0(opaqueBlock, block, lcv, ucv, sigIdx, reim) void
+
+%return "&controlador_predictivo_neural_network_DW.SFunction_DSTATE" + SLibCG_ArrayIndexer(ucv, lcv, sigIdx)
+%endfunction
+
+%function getDWork_4_7_0_1_0_0(opaqueBlock, block, lcv, ucv, sigIdx, reim) void
+
+%return "controlador_predictivo_neural_network_DW.SFunction_DSTATE" + SLibCG_ArrayIndexer(ucv, lcv, sigIdx)
+%endfunction
+
+%function getParamAddr_4_7_0_1_1_13(opaqueBlock, block, lcv, ucv, sigIdx, reim) void
+
+%return "&controlador_predictivo_neural_network_P.SFunction_P1"
+%endfunction
+
+%function getParam_4_7_0_1_1_13(opaqueBlock, block, lcv, ucv, sigIdx, reim) void
+
+%return "controlador_predictivo_neural_network_P.SFunction_P1"
+%endfunction
+
+%function getParamAddr_4_7_0_1_1_15(opaqueBlock, block, lcv, ucv, sigIdx, reim) void
+
+%return "&controlador_predictivo_neural_network_P.SFunction_P2"
+%endfunction
+
+%function getParam_4_7_0_1_1_15(opaqueBlock, block, lcv, ucv, sigIdx, reim) void
+
+%return "controlador_predictivo_neural_network_P.SFunction_P2"
+%endfunction
+
+%function getParamAddr_4_7_0_1_1_17(opaqueBlock, block, lcv, ucv, sigIdx, reim) void
+
+%return "&controlador_predictivo_neural_network_P.SFunction_P3"
+%endfunction
+
+%function getParam_4_7_0_1_1_17(opaqueBlock, block, lcv, ucv, sigIdx, reim) void
+
+%return "controlador_predictivo_neural_network_P.SFunction_P3"
+%endfunction
+
+%function getParamAddr_4_7_0_1_1_19(opaqueBlock, block, lcv, ucv, sigIdx, reim) void
+
+%return "&controlador_predictivo_neural_network_P.SFunction_P4"
+%endfunction
+
+%function getParam_4_7_0_1_1_19(opaqueBlock, block, lcv, ucv, sigIdx, reim) void
+
+%return "controlador_predictivo_neural_network_P.SFunction_P4"
+%endfunction
+
+%function getParamAddr_4_7_0_1_1_21(opaqueBlock, block, lcv, ucv, sigIdx, reim) void
+
+%return "&controlador_predictivo_neural_network_P.SFunction_P5"
+%endfunction
+
+%function getParam_4_7_0_1_1_21(opaqueBlock, block, lcv, ucv, sigIdx, reim) void
+
+%return "controlador_predictivo_neural_network_P.SFunction_P5"
+%endfunction
+
+%function getParamAddr_4_7_0_1_1_23(opaqueBlock, block, lcv, ucv, sigIdx, reim) void
+
+%return "&controlador_predictivo_neural_network_P.SFunction_P6"
+%endfunction
+
+%function getParam_4_7_0_1_1_23(opaqueBlock, block, lcv, ucv, sigIdx, reim) void
+
+%return "controlador_predictivo_neural_network_P.SFunction_P6"
+%endfunction
+
+%function getParamAddr_4_7_0_1_1_25(opaqueBlock, block, lcv, ucv, sigIdx, reim) void
+
+%return "&controlador_predictivo_neural_network_P.SFunction_P7"
+%endfunction
+
+%function getParam_4_7_0_1_1_25(opaqueBlock, block, lcv, ucv, sigIdx, reim) void
+
+%return "controlador_predictivo_neural_network_P.SFunction_P7"
+%endfunction
+
+%function getParamAddr_4_7_0_1_1_27(opaqueBlock, block, lcv, ucv, sigIdx, reim) void
+
+%return "&controlador_predictivo_neural_network_P.SFunction_P8"
+%endfunction
+
+%function getParam_4_7_0_1_1_27(opaqueBlock, block, lcv, ucv, sigIdx, reim) void
+
+%return "controlador_predictivo_neural_network_P.SFunction_P8"
+%endfunction
+
+%function getParamAddr_4_7_0_1_1_29(opaqueBlock, block, lcv, ucv, sigIdx, reim) void
+
+%return "&controlador_predictivo_neural_network_P.SFunction_P9"
+%endfunction
+
+%function getParam_4_7_0_1_1_29(opaqueBlock, block, lcv, ucv, sigIdx, reim) void
+
+%return "controlador_predictivo_neural_network_P.SFunction_P9"
+%endfunction
+
+%function getParamAddr_4_7_0_1_1_31(opaqueBlock, block, lcv, ucv, sigIdx, reim) void
+
+%return "&controlador_predictivo_neural_network_P.SFunction_P10"
+%endfunction
+
+%function getParam_4_7_0_1_1_31(opaqueBlock, block, lcv, ucv, sigIdx, reim) void
+
+%return "controlador_predictivo_neural_network_P.SFunction_P10"
+%endfunction
+
+%function getParamAddr_4_7_0_1_1_33(opaqueBlock, block, lcv, ucv, sigIdx, reim) void
+
+%return "&controlador_predictivo_neural_network_P.SFunction_P11"
+%endfunction
+
+%function getParam_4_7_0_1_1_33(opaqueBlock, block, lcv, ucv, sigIdx, reim) void
+
+%return "controlador_predictivo_neural_network_P.SFunction_P11"
+%endfunction
+
+%function getParamAddr_4_7_0_1_1_35(opaqueBlock, block, lcv, ucv, sigIdx, reim) void
+
+%return "&controlador_predictivo_neural_network_P.SFunction_P12"
+%endfunction
+
+%function getParam_4_7_0_1_1_35(opaqueBlock, block, lcv, ucv, sigIdx, reim) void
+
+%return "controlador_predictivo_neural_network_P.SFunction_P12"
+%endfunction
+
+%function getParamAddr_4_7_0_1_1_37(opaqueBlock, block, lcv, ucv, sigIdx, reim) void
+
+%return "&controlador_predictivo_neural_network_P.SFunction_P13"
+%endfunction
+
+%function getParam_4_7_0_1_1_37(opaqueBlock, block, lcv, ucv, sigIdx, reim) void
+
+%return "controlador_predictivo_neural_network_P.SFunction_P13"
+%endfunction
+
+%function getParamAddr_4_7_0_1_1_39(opaqueBlock, block, lcv, ucv, sigIdx, reim) void
+
+%return "&controlador_predictivo_neural_network_P.SFunction_P14"
+%endfunction
+
+%function getParam_4_7_0_1_1_39(opaqueBlock, block, lcv, ucv, sigIdx, reim) void
+
+%return "controlador_predictivo_neural_network_P.SFunction_P14"
+%endfunction
+
+%function getParamAddr_4_7_0_1_1_41(opaqueBlock, block, lcv, ucv, sigIdx, reim) void
+
+%return "&controlador_predictivo_neural_network_P.SFunction_P15"
+%endfunction
+
+%function getParam_4_7_0_1_1_41(opaqueBlock, block, lcv, ucv, sigIdx, reim) void
+
+%return "controlador_predictivo_neural_network_P.SFunction_P15"
+%endfunction
+
+%function getParamAddr_4_7_0_1_1_43(opaqueBlock, block, lcv, ucv, sigIdx, reim) void
+
+%return "&controlador_predictivo_neural_network_P.SFunction_P16"
+%endfunction
+
+%function getParam_4_7_0_1_1_43(opaqueBlock, block, lcv, ucv, sigIdx, reim) void
+
+%return "controlador_predictivo_neural_network_P.SFunction_P16"
+%endfunction
+
+%function getParamAddr_4_7_0_1_1_45(opaqueBlock, block, lcv, ucv, sigIdx, reim) void
+
+%return "&controlador_predictivo_neural_network_P.SFunction_P17"
+%endfunction
+
+%function getParam_4_7_0_1_1_45(opaqueBlock, block, lcv, ucv, sigIdx, reim) void
+
+%return "controlador_predictivo_neural_network_P.SFunction_P17"
+%endfunction
+
+%function getParamAddr_4_7_0_1_1_47(opaqueBlock, block, lcv, ucv, sigIdx, reim) void
+
+%return "&controlador_predictivo_neural_network_P.SFunction_P18"
+%endfunction
+
+%function getParam_4_7_0_1_1_47(opaqueBlock, block, lcv, ucv, sigIdx, reim) void
+
+%return "controlador_predictivo_neural_network_P.SFunction_P18"
+%endfunction
+
+%function getParamAddr_4_7_0_1_1_49(opaqueBlock, block, lcv, ucv, sigIdx, reim) void
+
+%return "&controlador_predictivo_neural_network_P.SFunction_P19"
+%endfunction
+
+%function getParam_4_7_0_1_1_49(opaqueBlock, block, lcv, ucv, sigIdx, reim) void
+
+%return "controlador_predictivo_neural_network_P.SFunction_P19"
+%endfunction
+
+%function getParamAddr_4_7_0_1_1_51(opaqueBlock, block, lcv, ucv, sigIdx, reim) void
+
+%return "&controlador_predictivo_neural_network_P.SFunction_P20"
+%endfunction
+
+%function getParam_4_7_0_1_1_51(opaqueBlock, block, lcv, ucv, sigIdx, reim) void
+
+%return "controlador_predictivo_neural_network_P.SFunction_P20"
+%endfunction
+
+%function getParamAddr_4_7_0_1_1_53(opaqueBlock, block, lcv, ucv, sigIdx, reim) void
+
+%return "&controlador_predictivo_neural_network_P.SFunction_P21"
+%endfunction
+
+%function getParam_4_7_0_1_1_53(opaqueBlock, block, lcv, ucv, sigIdx, reim) void
+
+%return "controlador_predictivo_neural_network_P.SFunction_P21"
+%endfunction
+
+%function getParamAddr_4_7_0_1_1_55(opaqueBlock, block, lcv, ucv, sigIdx, reim) void
+
+%return "&controlador_predictivo_neural_network_P.SFunction_P22"
+%endfunction
+
+%function getParam_4_7_0_1_1_55(opaqueBlock, block, lcv, ucv, sigIdx, reim) void
+
+%return "controlador_predictivo_neural_network_P.SFunction_P22"
+%endfunction
+
+%function getInputAddr_4_0_0_1_0_0(opaqueBlock, block, lcv, ucv, sigIdx, reim) void
+
+%return "&controlador_predictivo_neural_network_B.Concentracion"
+%endfunction
+
+%function getInput_4_0_0_1_0_0(opaqueBlock, block, lcv, ucv, sigIdx, reim) void
+
+%return "controlador_predictivo_neural_network_B.Concentracion"
+%endfunction
+
+%function getInputAddr_4_0_0_1_1_0(opaqueBlock, block, lcv, ucv, sigIdx, reim) void
+
+%return "&controlador_predictivo_neural_network_B.RandomReference"
+%endfunction
+
+%function getInput_4_0_0_1_1_0(opaqueBlock, block, lcv, ucv, sigIdx, reim) void
+
+%return "controlador_predictivo_neural_network_B.RandomReference"
+%endfunction
+
+%function getDWorkAddr_4_0_0_1_0_0(opaqueBlock, block, lcv, ucv, sigIdx, reim) void
+
+%return "&controlador_predictivo_neural_network_DW.Scope_PWORK" + SLibCG_ArrayIndexer(ucv, lcv, sigIdx)
+%endfunction
+
+%function getDWork_4_0_0_1_0_0(opaqueBlock, block, lcv, ucv, sigIdx, reim) void
+
+%return "controlador_predictivo_neural_network_DW.Scope_PWORK" + SLibCG_ArrayIndexer(ucv, lcv, sigIdx)
+%endfunction
+
+%function getInputAddr_4_7_0_2_0_0(opaqueBlock, block, lcv, ucv, sigIdx, reim) void
+
+%return "&controlador_predictivo_neural_network_B.TmpSignalConversionAtSFunctionI" + SLibCG_ArrayIndexer(ucv, lcv, sigIdx)
+%endfunction
+
+%function getInput_4_7_0_2_0_0(opaqueBlock, block, lcv, ucv, sigIdx, reim) void
+
+%return "controlador_predictivo_neural_network_B.TmpSignalConversionAtSFunctionI" + SLibCG_ArrayIndexer(ucv, lcv, sigIdx)
+%endfunction
+
+%function getOutputAddr_4_7_0_2_0_0(opaqueBlock, block, lcv, ucv, sigIdx, reim) void
+
+%return "&controlador_predictivo_neural_network_B.SFunction"
+%endfunction
+
+%function getOutput_4_7_0_2_0_0(opaqueBlock, block, lcv, ucv, sigIdx, reim) void
+
+%return "controlador_predictivo_neural_network_B.SFunction"
+%endfunction
+
+%function getDWorkAddr_4_7_0_2_0_0(opaqueBlock, block, lcv, ucv, sigIdx, reim) void
+
+%return "&controlador_predictivo_neural_network_DW.SFunction_DSTATE" + SLibCG_ArrayIndexer(ucv, lcv, sigIdx)
+%endfunction
+
+%function getDWork_4_7_0_2_0_0(opaqueBlock, block, lcv, ucv, sigIdx, reim) void
+
+%return "controlador_predictivo_neural_network_DW.SFunction_DSTATE" + SLibCG_ArrayIndexer(ucv, lcv, sigIdx)
+%endfunction
+
+%function getParamAddr_4_7_0_2_1_13(opaqueBlock, block, lcv, ucv, sigIdx, reim) void
+
+%return "&controlador_predictivo_neural_network_P.SFunction_P1"
+%endfunction
+
+%function getParam_4_7_0_2_1_13(opaqueBlock, block, lcv, ucv, sigIdx, reim) void
+
+%return "controlador_predictivo_neural_network_P.SFunction_P1"
+%endfunction
+
+%function getParamAddr_4_7_0_2_1_15(opaqueBlock, block, lcv, ucv, sigIdx, reim) void
+
+%return "&controlador_predictivo_neural_network_P.SFunction_P2"
+%endfunction
+
+%function getParam_4_7_0_2_1_15(opaqueBlock, block, lcv, ucv, sigIdx, reim) void
+
+%return "controlador_predictivo_neural_network_P.SFunction_P2"
+%endfunction
+
+%function getParamAddr_4_7_0_2_1_17(opaqueBlock, block, lcv, ucv, sigIdx, reim) void
+
+%return "&controlador_predictivo_neural_network_P.SFunction_P3"
+%endfunction
+
+%function getParam_4_7_0_2_1_17(opaqueBlock, block, lcv, ucv, sigIdx, reim) void
+
+%return "controlador_predictivo_neural_network_P.SFunction_P3"
+%endfunction
+
+%function getParamAddr_4_7_0_2_1_19(opaqueBlock, block, lcv, ucv, sigIdx, reim) void
+
+%return "&controlador_predictivo_neural_network_P.SFunction_P4"
+%endfunction
+
+%function getParam_4_7_0_2_1_19(opaqueBlock, block, lcv, ucv, sigIdx, reim) void
+
+%return "controlador_predictivo_neural_network_P.SFunction_P4"
+%endfunction
+
+%function getParamAddr_4_7_0_2_1_21(opaqueBlock, block, lcv, ucv, sigIdx, reim) void
+
+%return "&controlador_predictivo_neural_network_P.SFunction_P5"
+%endfunction
+
+%function getParam_4_7_0_2_1_21(opaqueBlock, block, lcv, ucv, sigIdx, reim) void
+
+%return "controlador_predictivo_neural_network_P.SFunction_P5"
+%endfunction
+
+%function getParamAddr_4_7_0_2_1_23(opaqueBlock, block, lcv, ucv, sigIdx, reim) void
+
+%return "&controlador_predictivo_neural_network_P.SFunction_P6"
+%endfunction
+
+%function getParam_4_7_0_2_1_23(opaqueBlock, block, lcv, ucv, sigIdx, reim) void
+
+%return "controlador_predictivo_neural_network_P.SFunction_P6"
+%endfunction
+
+%function getParamAddr_4_7_0_2_1_25(opaqueBlock, block, lcv, ucv, sigIdx, reim) void
+
+%return "&controlador_predictivo_neural_network_P.SFunction_P7"
+%endfunction
+
+%function getParam_4_7_0_2_1_25(opaqueBlock, block, lcv, ucv, sigIdx, reim) void
+
+%return "controlador_predictivo_neural_network_P.SFunction_P7"
+%endfunction
+
+%function getParamAddr_4_7_0_2_1_27(opaqueBlock, block, lcv, ucv, sigIdx, reim) void
+
+%return "&controlador_predictivo_neural_network_P.SFunction_P8"
+%endfunction
+
+%function getParam_4_7_0_2_1_27(opaqueBlock, block, lcv, ucv, sigIdx, reim) void
+
+%return "controlador_predictivo_neural_network_P.SFunction_P8"
+%endfunction
+
+%function getParamAddr_4_7_0_2_1_29(opaqueBlock, block, lcv, ucv, sigIdx, reim) void
+
+%return "&controlador_predictivo_neural_network_P.SFunction_P9"
+%endfunction
+
+%function getParam_4_7_0_2_1_29(opaqueBlock, block, lcv, ucv, sigIdx, reim) void
+
+%return "controlador_predictivo_neural_network_P.SFunction_P9"
+%endfunction
+
+%function getParamAddr_4_7_0_2_1_31(opaqueBlock, block, lcv, ucv, sigIdx, reim) void
+
+%return "&controlador_predictivo_neural_network_P.SFunction_P10"
+%endfunction
+
+%function getParam_4_7_0_2_1_31(opaqueBlock, block, lcv, ucv, sigIdx, reim) void
+
+%return "controlador_predictivo_neural_network_P.SFunction_P10"
+%endfunction
+
+%function getParamAddr_4_7_0_2_1_33(opaqueBlock, block, lcv, ucv, sigIdx, reim) void
+
+%return "&controlador_predictivo_neural_network_P.SFunction_P11"
+%endfunction
+
+%function getParam_4_7_0_2_1_33(opaqueBlock, block, lcv, ucv, sigIdx, reim) void
+
+%return "controlador_predictivo_neural_network_P.SFunction_P11"
+%endfunction
+
+%function getParamAddr_4_7_0_2_1_35(opaqueBlock, block, lcv, ucv, sigIdx, reim) void
+
+%return "&controlador_predictivo_neural_network_P.SFunction_P12"
+%endfunction
+
+%function getParam_4_7_0_2_1_35(opaqueBlock, block, lcv, ucv, sigIdx, reim) void
+
+%return "controlador_predictivo_neural_network_P.SFunction_P12"
+%endfunction
+
+%function getParamAddr_4_7_0_2_1_37(opaqueBlock, block, lcv, ucv, sigIdx, reim) void
+
+%return "&controlador_predictivo_neural_network_P.SFunction_P13"
+%endfunction
+
+%function getParam_4_7_0_2_1_37(opaqueBlock, block, lcv, ucv, sigIdx, reim) void
+
+%return "controlador_predictivo_neural_network_P.SFunction_P13"
+%endfunction
+
+%function getParamAddr_4_7_0_2_1_39(opaqueBlock, block, lcv, ucv, sigIdx, reim) void
+
+%return "&controlador_predictivo_neural_network_P.SFunction_P14"
+%endfunction
+
+%function getParam_4_7_0_2_1_39(opaqueBlock, block, lcv, ucv, sigIdx, reim) void
+
+%return "controlador_predictivo_neural_network_P.SFunction_P14"
+%endfunction
+
+%function getParamAddr_4_7_0_2_1_41(opaqueBlock, block, lcv, ucv, sigIdx, reim) void
+
+%return "&controlador_predictivo_neural_network_P.SFunction_P15"
+%endfunction
+
+%function getParam_4_7_0_2_1_41(opaqueBlock, block, lcv, ucv, sigIdx, reim) void
+
+%return "controlador_predictivo_neural_network_P.SFunction_P15"
+%endfunction
+
+%function getParamAddr_4_7_0_2_1_43(opaqueBlock, block, lcv, ucv, sigIdx, reim) void
+
+%return "&controlador_predictivo_neural_network_P.SFunction_P16"
+%endfunction
+
+%function getParam_4_7_0_2_1_43(opaqueBlock, block, lcv, ucv, sigIdx, reim) void
+
+%return "controlador_predictivo_neural_network_P.SFunction_P16"
+%endfunction
+
+%function getParamAddr_4_7_0_2_1_45(opaqueBlock, block, lcv, ucv, sigIdx, reim) void
+
+%return "&controlador_predictivo_neural_network_P.SFunction_P17"
+%endfunction
+
+%function getParam_4_7_0_2_1_45(opaqueBlock, block, lcv, ucv, sigIdx, reim) void
+
+%return "controlador_predictivo_neural_network_P.SFunction_P17"
+%endfunction
+
+%function getParamAddr_4_7_0_2_1_47(opaqueBlock, block, lcv, ucv, sigIdx, reim) void
+
+%return "&controlador_predictivo_neural_network_P.SFunction_P18"
+%endfunction
+
+%function getParam_4_7_0_2_1_47(opaqueBlock, block, lcv, ucv, sigIdx, reim) void
+
+%return "controlador_predictivo_neural_network_P.SFunction_P18"
+%endfunction
+
+%function getParamAddr_4_7_0_2_1_49(opaqueBlock, block, lcv, ucv, sigIdx, reim) void
+
+%return "&controlador_predictivo_neural_network_P.SFunction_P19"
+%endfunction
+
+%function getParam_4_7_0_2_1_49(opaqueBlock, block, lcv, ucv, sigIdx, reim) void
+
+%return "controlador_predictivo_neural_network_P.SFunction_P19"
+%endfunction
+
+%function getParamAddr_4_7_0_2_1_51(opaqueBlock, block, lcv, ucv, sigIdx, reim) void
+
+%return "&controlador_predictivo_neural_network_P.SFunction_P20"
+%endfunction
+
+%function getParam_4_7_0_2_1_51(opaqueBlock, block, lcv, ucv, sigIdx, reim) void
+
+%return "controlador_predictivo_neural_network_P.SFunction_P20"
+%endfunction
+
+%function getParamAddr_4_7_0_2_1_53(opaqueBlock, block, lcv, ucv, sigIdx, reim) void
+
+%return "&controlador_predictivo_neural_network_P.SFunction_P21"
+%endfunction
+
+%function getParam_4_7_0_2_1_53(opaqueBlock, block, lcv, ucv, sigIdx, reim) void
+
+%return "controlador_predictivo_neural_network_P.SFunction_P21"
+%endfunction
+
+%function getParamAddr_4_7_0_2_1_55(opaqueBlock, block, lcv, ucv, sigIdx, reim) void
+
+%return "&controlador_predictivo_neural_network_P.SFunction_P22"
+%endfunction
+
+%function getParam_4_7_0_2_1_55(opaqueBlock, block, lcv, ucv, sigIdx, reim) void
+
+%return "controlador_predictivo_neural_network_P.SFunction_P22"
+%endfunction
+
+%function getInputAddr_4_9_0_2_0_0(opaqueBlock, block, lcv, ucv, sigIdx, reim) void
+%<SLibCGIRAccessLocalVar(1, 0, "")> %% rtb_Switch
+
+%return "&rtb_Switch"
+%endfunction
+
+%function getInput_4_9_0_2_0_0(opaqueBlock, block, lcv, ucv, sigIdx, reim) void
+%<SLibCGIRAccessLocalVar(1, 0, "")> %% rtb_Switch
+
+%return "rtb_Switch"
+%endfunction
+
+%function getOutputAddr_4_9_0_2_0_0(opaqueBlock, block, lcv, ucv, sigIdx, reim) void
+%<SLibCGIRAccessLocalVar(13, 0, "")> %% rtb_DiscreteStateSpace1
+
+%return "&rtb_DiscreteStateSpace1" + SLibCG_ArrayIndexer(ucv, lcv, sigIdx)
+%endfunction
+
+%function getOutput_4_9_0_2_0_0(opaqueBlock, block, lcv, ucv, sigIdx, reim) void
+%<SLibCGIRAccessLocalVar(13, 0, "")> %% rtb_DiscreteStateSpace1
+
+%return "rtb_DiscreteStateSpace1" + SLibCG_ArrayIndexer(ucv, lcv, sigIdx)
+%endfunction
+
+%function getDWorkAddr_4_9_0_2_0_0(opaqueBlock, block, lcv, ucv, sigIdx, reim) void
+
+%return "&controlador_predictivo_neural_network_DW.DiscreteStateSpace1_DSTATE"
+%endfunction
+
+%function getDWork_4_9_0_2_0_0(opaqueBlock, block, lcv, ucv, sigIdx, reim) void
+
+%return "controlador_predictivo_neural_network_DW.DiscreteStateSpace1_DSTATE"
+%endfunction
+
+%function getParamAddr_4_9_0_2_1_57(opaqueBlock, block, lcv, ucv, sigIdx, reim) void
+
+%return "&controlador_predictivo_neural_network_P.DiscreteStateSpace1_A"
+%endfunction
+
+%function getParam_4_9_0_2_1_57(opaqueBlock, block, lcv, ucv, sigIdx, reim) void
+
+%return "controlador_predictivo_neural_network_P.DiscreteStateSpace1_A"
+%endfunction
+
+%function getParamAddr_4_9_0_2_1_58(opaqueBlock, block, lcv, ucv, sigIdx, reim) void
+
+%return "&controlador_predictivo_neural_network_P.DiscreteStateSpace1_C"
+%endfunction
+
+%function getParam_4_9_0_2_1_58(opaqueBlock, block, lcv, ucv, sigIdx, reim) void
+
+%return "controlador_predictivo_neural_network_P.DiscreteStateSpace1_C"
+%endfunction
+
+%function getParamAddr_4_9_0_2_1_59(opaqueBlock, block, lcv, ucv, sigIdx, reim) void
+
+%return "&controlador_predictivo_neural_network_P.DiscreteStateSpace1_D"
+%endfunction
+
+%function getParam_4_9_0_2_1_59(opaqueBlock, block, lcv, ucv, sigIdx, reim) void
+
+%return "controlador_predictivo_neural_network_P.DiscreteStateSpace1_D"
+%endfunction
+
+%function getParamAddr_4_9_0_2_1_60(opaqueBlock, block, lcv, ucv, sigIdx, reim) void
+
+%return "&controlador_predictivo_neural_network_P.DiscreteStateSpace1_InitialCond"
+%endfunction
+
+%function getParam_4_9_0_2_1_60(opaqueBlock, block, lcv, ucv, sigIdx, reim) void
+
+%return "controlador_predictivo_neural_network_P.DiscreteStateSpace1_InitialCond"
+%endfunction
+
+%function getInputAddr_4_10_0_2_0_0(opaqueBlock, block, lcv, ucv, sigIdx, reim) void
+%<SLibCGIRAccessLocalVar(2, 0, "")> %% rtb_UnitDelay1
+
+%return "&rtb_UnitDelay1"
+%endfunction
+
+%function getInput_4_10_0_2_0_0(opaqueBlock, block, lcv, ucv, sigIdx, reim) void
+%<SLibCGIRAccessLocalVar(2, 0, "")> %% rtb_UnitDelay1
+
+%return "rtb_UnitDelay1"
+%endfunction
+
+%function getOutputAddr_4_10_0_2_0_0(opaqueBlock, block, lcv, ucv, sigIdx, reim) void
+%<SLibCGIRAccessLocalVar(14, 0, "")> %% rtb_DiscreteStateSpace2
+
+%return "&rtb_DiscreteStateSpace2" + SLibCG_ArrayIndexer(ucv, lcv, sigIdx)
+%endfunction
+
+%function getOutput_4_10_0_2_0_0(opaqueBlock, block, lcv, ucv, sigIdx, reim) void
+%<SLibCGIRAccessLocalVar(14, 0, "")> %% rtb_DiscreteStateSpace2
+
+%return "rtb_DiscreteStateSpace2" + SLibCG_ArrayIndexer(ucv, lcv, sigIdx)
+%endfunction
+
+%function getDWorkAddr_4_10_0_2_0_0(opaqueBlock, block, lcv, ucv, sigIdx, reim) void
+
+%return "&controlador_predictivo_neural_network_DW.DiscreteStateSpace2_DSTATE"
+%endfunction
+
+%function getDWork_4_10_0_2_0_0(opaqueBlock, block, lcv, ucv, sigIdx, reim) void
+
+%return "controlador_predictivo_neural_network_DW.DiscreteStateSpace2_DSTATE"
+%endfunction
+
+%function getParamAddr_4_10_0_2_1_62(opaqueBlock, block, lcv, ucv, sigIdx, reim) void
+
+%return "&controlador_predictivo_neural_network_P.DiscreteStateSpace2_A"
+%endfunction
+
+%function getParam_4_10_0_2_1_62(opaqueBlock, block, lcv, ucv, sigIdx, reim) void
+
+%return "controlador_predictivo_neural_network_P.DiscreteStateSpace2_A"
+%endfunction
+
+%function getParamAddr_4_10_0_2_1_63(opaqueBlock, block, lcv, ucv, sigIdx, reim) void
+
+%return "&controlador_predictivo_neural_network_P.DiscreteStateSpace2_C"
+%endfunction
+
+%function getParam_4_10_0_2_1_63(opaqueBlock, block, lcv, ucv, sigIdx, reim) void
+
+%return "controlador_predictivo_neural_network_P.DiscreteStateSpace2_C"
+%endfunction
+
+%function getParamAddr_4_10_0_2_1_64(opaqueBlock, block, lcv, ucv, sigIdx, reim) void
+
+%return "&controlador_predictivo_neural_network_P.DiscreteStateSpace2_D"
+%endfunction
+
+%function getParam_4_10_0_2_1_64(opaqueBlock, block, lcv, ucv, sigIdx, reim) void
+
+%return "controlador_predictivo_neural_network_P.DiscreteStateSpace2_D"
+%endfunction
+
+%function getParamAddr_4_10_0_2_1_65(opaqueBlock, block, lcv, ucv, sigIdx, reim) void
+
+%return "&controlador_predictivo_neural_network_P.DiscreteStateSpace2_InitialCond"
+%endfunction
+
+%function getParam_4_10_0_2_1_65(opaqueBlock, block, lcv, ucv, sigIdx, reim) void
+
+%return "controlador_predictivo_neural_network_P.DiscreteStateSpace2_InitialCond"
+%endfunction
+
+%function getInputAddr_4_0_0_3_0_0(opaqueBlock, block, lcv, ucv, sigIdx, reim) void
+
+%return "&controlador_predictivo_neural_network_B.Concentracion"
+%endfunction
+
+%function getInput_4_0_0_3_0_0(opaqueBlock, block, lcv, ucv, sigIdx, reim) void
+
+%return "controlador_predictivo_neural_network_B.Concentracion"
+%endfunction
+
+%function getInputAddr_4_0_0_3_1_0(opaqueBlock, block, lcv, ucv, sigIdx, reim) void
+
+%return "&controlador_predictivo_neural_network_B.RandomReference"
+%endfunction
+
+%function getInput_4_0_0_3_1_0(opaqueBlock, block, lcv, ucv, sigIdx, reim) void
+
+%return "controlador_predictivo_neural_network_B.RandomReference"
+%endfunction
+
+%function getDWorkAddr_4_0_0_3_0_0(opaqueBlock, block, lcv, ucv, sigIdx, reim) void
+
+%return "&controlador_predictivo_neural_network_DW.Scope_PWORK" + SLibCG_ArrayIndexer(ucv, lcv, sigIdx)
+%endfunction
+
+%function getDWork_4_0_0_3_0_0(opaqueBlock, block, lcv, ucv, sigIdx, reim) void
+
+%return "controlador_predictivo_neural_network_DW.Scope_PWORK" + SLibCG_ArrayIndexer(ucv, lcv, sigIdx)
+%endfunction
+
+%function getInputAddr_4_7_0_3_0_0(opaqueBlock, block, lcv, ucv, sigIdx, reim) void
+
+%return "&controlador_predictivo_neural_network_B.TmpSignalConversionAtSFunctionI" + SLibCG_ArrayIndexer(ucv, lcv, sigIdx)
+%endfunction
+
+%function getInput_4_7_0_3_0_0(opaqueBlock, block, lcv, ucv, sigIdx, reim) void
+
+%return "controlador_predictivo_neural_network_B.TmpSignalConversionAtSFunctionI" + SLibCG_ArrayIndexer(ucv, lcv, sigIdx)
+%endfunction
+
+%function getOutputAddr_4_7_0_3_0_0(opaqueBlock, block, lcv, ucv, sigIdx, reim) void
+
+%return "&controlador_predictivo_neural_network_B.SFunction"
+%endfunction
+
+%function getOutput_4_7_0_3_0_0(opaqueBlock, block, lcv, ucv, sigIdx, reim) void
+
+%return "controlador_predictivo_neural_network_B.SFunction"
+%endfunction
+
+%function getDWorkAddr_4_7_0_3_0_0(opaqueBlock, block, lcv, ucv, sigIdx, reim) void
+
+%return "&controlador_predictivo_neural_network_DW.SFunction_DSTATE" + SLibCG_ArrayIndexer(ucv, lcv, sigIdx)
+%endfunction
+
+%function getDWork_4_7_0_3_0_0(opaqueBlock, block, lcv, ucv, sigIdx, reim) void
+
+%return "controlador_predictivo_neural_network_DW.SFunction_DSTATE" + SLibCG_ArrayIndexer(ucv, lcv, sigIdx)
+%endfunction
+
+%function getParamAddr_4_7_0_3_1_13(opaqueBlock, block, lcv, ucv, sigIdx, reim) void
+
+%return "&controlador_predictivo_neural_network_P.SFunction_P1"
+%endfunction
+
+%function getParam_4_7_0_3_1_13(opaqueBlock, block, lcv, ucv, sigIdx, reim) void
+
+%return "controlador_predictivo_neural_network_P.SFunction_P1"
+%endfunction
+
+%function getParamAddr_4_7_0_3_1_15(opaqueBlock, block, lcv, ucv, sigIdx, reim) void
+
+%return "&controlador_predictivo_neural_network_P.SFunction_P2"
+%endfunction
+
+%function getParam_4_7_0_3_1_15(opaqueBlock, block, lcv, ucv, sigIdx, reim) void
+
+%return "controlador_predictivo_neural_network_P.SFunction_P2"
+%endfunction
+
+%function getParamAddr_4_7_0_3_1_17(opaqueBlock, block, lcv, ucv, sigIdx, reim) void
+
+%return "&controlador_predictivo_neural_network_P.SFunction_P3"
+%endfunction
+
+%function getParam_4_7_0_3_1_17(opaqueBlock, block, lcv, ucv, sigIdx, reim) void
+
+%return "controlador_predictivo_neural_network_P.SFunction_P3"
+%endfunction
+
+%function getParamAddr_4_7_0_3_1_19(opaqueBlock, block, lcv, ucv, sigIdx, reim) void
+
+%return "&controlador_predictivo_neural_network_P.SFunction_P4"
+%endfunction
+
+%function getParam_4_7_0_3_1_19(opaqueBlock, block, lcv, ucv, sigIdx, reim) void
+
+%return "controlador_predictivo_neural_network_P.SFunction_P4"
+%endfunction
+
+%function getParamAddr_4_7_0_3_1_21(opaqueBlock, block, lcv, ucv, sigIdx, reim) void
+
+%return "&controlador_predictivo_neural_network_P.SFunction_P5"
+%endfunction
+
+%function getParam_4_7_0_3_1_21(opaqueBlock, block, lcv, ucv, sigIdx, reim) void
+
+%return "controlador_predictivo_neural_network_P.SFunction_P5"
+%endfunction
+
+%function getParamAddr_4_7_0_3_1_23(opaqueBlock, block, lcv, ucv, sigIdx, reim) void
+
+%return "&controlador_predictivo_neural_network_P.SFunction_P6"
+%endfunction
+
+%function getParam_4_7_0_3_1_23(opaqueBlock, block, lcv, ucv, sigIdx, reim) void
+
+%return "controlador_predictivo_neural_network_P.SFunction_P6"
+%endfunction
+
+%function getParamAddr_4_7_0_3_1_25(opaqueBlock, block, lcv, ucv, sigIdx, reim) void
+
+%return "&controlador_predictivo_neural_network_P.SFunction_P7"
+%endfunction
+
+%function getParam_4_7_0_3_1_25(opaqueBlock, block, lcv, ucv, sigIdx, reim) void
+
+%return "controlador_predictivo_neural_network_P.SFunction_P7"
+%endfunction
+
+%function getParamAddr_4_7_0_3_1_27(opaqueBlock, block, lcv, ucv, sigIdx, reim) void
+
+%return "&controlador_predictivo_neural_network_P.SFunction_P8"
+%endfunction
+
+%function getParam_4_7_0_3_1_27(opaqueBlock, block, lcv, ucv, sigIdx, reim) void
+
+%return "controlador_predictivo_neural_network_P.SFunction_P8"
+%endfunction
+
+%function getParamAddr_4_7_0_3_1_29(opaqueBlock, block, lcv, ucv, sigIdx, reim) void
+
+%return "&controlador_predictivo_neural_network_P.SFunction_P9"
+%endfunction
+
+%function getParam_4_7_0_3_1_29(opaqueBlock, block, lcv, ucv, sigIdx, reim) void
+
+%return "controlador_predictivo_neural_network_P.SFunction_P9"
+%endfunction
+
+%function getParamAddr_4_7_0_3_1_31(opaqueBlock, block, lcv, ucv, sigIdx, reim) void
+
+%return "&controlador_predictivo_neural_network_P.SFunction_P10"
+%endfunction
+
+%function getParam_4_7_0_3_1_31(opaqueBlock, block, lcv, ucv, sigIdx, reim) void
+
+%return "controlador_predictivo_neural_network_P.SFunction_P10"
+%endfunction
+
+%function getParamAddr_4_7_0_3_1_33(opaqueBlock, block, lcv, ucv, sigIdx, reim) void
+
+%return "&controlador_predictivo_neural_network_P.SFunction_P11"
+%endfunction
+
+%function getParam_4_7_0_3_1_33(opaqueBlock, block, lcv, ucv, sigIdx, reim) void
+
+%return "controlador_predictivo_neural_network_P.SFunction_P11"
+%endfunction
+
+%function getParamAddr_4_7_0_3_1_35(opaqueBlock, block, lcv, ucv, sigIdx, reim) void
+
+%return "&controlador_predictivo_neural_network_P.SFunction_P12"
+%endfunction
+
+%function getParam_4_7_0_3_1_35(opaqueBlock, block, lcv, ucv, sigIdx, reim) void
+
+%return "controlador_predictivo_neural_network_P.SFunction_P12"
+%endfunction
+
+%function getParamAddr_4_7_0_3_1_37(opaqueBlock, block, lcv, ucv, sigIdx, reim) void
+
+%return "&controlador_predictivo_neural_network_P.SFunction_P13"
+%endfunction
+
+%function getParam_4_7_0_3_1_37(opaqueBlock, block, lcv, ucv, sigIdx, reim) void
+
+%return "controlador_predictivo_neural_network_P.SFunction_P13"
+%endfunction
+
+%function getParamAddr_4_7_0_3_1_39(opaqueBlock, block, lcv, ucv, sigIdx, reim) void
+
+%return "&controlador_predictivo_neural_network_P.SFunction_P14"
+%endfunction
+
+%function getParam_4_7_0_3_1_39(opaqueBlock, block, lcv, ucv, sigIdx, reim) void
+
+%return "controlador_predictivo_neural_network_P.SFunction_P14"
+%endfunction
+
+%function getParamAddr_4_7_0_3_1_41(opaqueBlock, block, lcv, ucv, sigIdx, reim) void
+
+%return "&controlador_predictivo_neural_network_P.SFunction_P15"
+%endfunction
+
+%function getParam_4_7_0_3_1_41(opaqueBlock, block, lcv, ucv, sigIdx, reim) void
+
+%return "controlador_predictivo_neural_network_P.SFunction_P15"
+%endfunction
+
+%function getParamAddr_4_7_0_3_1_43(opaqueBlock, block, lcv, ucv, sigIdx, reim) void
+
+%return "&controlador_predictivo_neural_network_P.SFunction_P16"
+%endfunction
+
+%function getParam_4_7_0_3_1_43(opaqueBlock, block, lcv, ucv, sigIdx, reim) void
+
+%return "controlador_predictivo_neural_network_P.SFunction_P16"
+%endfunction
+
+%function getParamAddr_4_7_0_3_1_45(opaqueBlock, block, lcv, ucv, sigIdx, reim) void
+
+%return "&controlador_predictivo_neural_network_P.SFunction_P17"
+%endfunction
+
+%function getParam_4_7_0_3_1_45(opaqueBlock, block, lcv, ucv, sigIdx, reim) void
+
+%return "controlador_predictivo_neural_network_P.SFunction_P17"
+%endfunction
+
+%function getParamAddr_4_7_0_3_1_47(opaqueBlock, block, lcv, ucv, sigIdx, reim) void
+
+%return "&controlador_predictivo_neural_network_P.SFunction_P18"
+%endfunction
+
+%function getParam_4_7_0_3_1_47(opaqueBlock, block, lcv, ucv, sigIdx, reim) void
+
+%return "controlador_predictivo_neural_network_P.SFunction_P18"
+%endfunction
+
+%function getParamAddr_4_7_0_3_1_49(opaqueBlock, block, lcv, ucv, sigIdx, reim) void
+
+%return "&controlador_predictivo_neural_network_P.SFunction_P19"
+%endfunction
+
+%function getParam_4_7_0_3_1_49(opaqueBlock, block, lcv, ucv, sigIdx, reim) void
+
+%return "controlador_predictivo_neural_network_P.SFunction_P19"
+%endfunction
+
+%function getParamAddr_4_7_0_3_1_51(opaqueBlock, block, lcv, ucv, sigIdx, reim) void
+
+%return "&controlador_predictivo_neural_network_P.SFunction_P20"
+%endfunction
+
+%function getParam_4_7_0_3_1_51(opaqueBlock, block, lcv, ucv, sigIdx, reim) void
+
+%return "controlador_predictivo_neural_network_P.SFunction_P20"
+%endfunction
+
+%function getParamAddr_4_7_0_3_1_53(opaqueBlock, block, lcv, ucv, sigIdx, reim) void
+
+%return "&controlador_predictivo_neural_network_P.SFunction_P21"
+%endfunction
+
+%function getParam_4_7_0_3_1_53(opaqueBlock, block, lcv, ucv, sigIdx, reim) void
+
+%return "controlador_predictivo_neural_network_P.SFunction_P21"
+%endfunction
+
+%function getParamAddr_4_7_0_3_1_55(opaqueBlock, block, lcv, ucv, sigIdx, reim) void
+
+%return "&controlador_predictivo_neural_network_P.SFunction_P22"
+%endfunction
+
+%function getParam_4_7_0_3_1_55(opaqueBlock, block, lcv, ucv, sigIdx, reim) void
+
+%return "controlador_predictivo_neural_network_P.SFunction_P22"
+%endfunction
+
+%function getInputAddr_4_9_0_3_0_0(opaqueBlock, block, lcv, ucv, sigIdx, reim) void
+%<SLibCGIRAccessLocalVar(1, 0, "")> %% rtb_Switch
+
+%return "&rtb_Switch"
+%endfunction
+
+%function getInput_4_9_0_3_0_0(opaqueBlock, block, lcv, ucv, sigIdx, reim) void
+%<SLibCGIRAccessLocalVar(1, 0, "")> %% rtb_Switch
+
+%return "rtb_Switch"
+%endfunction
+
+%function getOutputAddr_4_9_0_3_0_0(opaqueBlock, block, lcv, ucv, sigIdx, reim) void
+%<SLibCGIRAccessLocalVar(13, 0, "")> %% rtb_DiscreteStateSpace1
+
+%return "&rtb_DiscreteStateSpace1" + SLibCG_ArrayIndexer(ucv, lcv, sigIdx)
+%endfunction
+
+%function getOutput_4_9_0_3_0_0(opaqueBlock, block, lcv, ucv, sigIdx, reim) void
+%<SLibCGIRAccessLocalVar(13, 0, "")> %% rtb_DiscreteStateSpace1
+
+%return "rtb_DiscreteStateSpace1" + SLibCG_ArrayIndexer(ucv, lcv, sigIdx)
+%endfunction
+
+%function getDWorkAddr_4_9_0_3_0_0(opaqueBlock, block, lcv, ucv, sigIdx, reim) void
+
+%return "&controlador_predictivo_neural_network_DW.DiscreteStateSpace1_DSTATE"
+%endfunction
+
+%function getDWork_4_9_0_3_0_0(opaqueBlock, block, lcv, ucv, sigIdx, reim) void
+
+%return "controlador_predictivo_neural_network_DW.DiscreteStateSpace1_DSTATE"
+%endfunction
+
+%function getParamAddr_4_9_0_3_1_57(opaqueBlock, block, lcv, ucv, sigIdx, reim) void
+
+%return "&controlador_predictivo_neural_network_P.DiscreteStateSpace1_A"
+%endfunction
+
+%function getParam_4_9_0_3_1_57(opaqueBlock, block, lcv, ucv, sigIdx, reim) void
+
+%return "controlador_predictivo_neural_network_P.DiscreteStateSpace1_A"
+%endfunction
+
+%function getParamAddr_4_9_0_3_1_58(opaqueBlock, block, lcv, ucv, sigIdx, reim) void
+
+%return "&controlador_predictivo_neural_network_P.DiscreteStateSpace1_C"
+%endfunction
+
+%function getParam_4_9_0_3_1_58(opaqueBlock, block, lcv, ucv, sigIdx, reim) void
+
+%return "controlador_predictivo_neural_network_P.DiscreteStateSpace1_C"
+%endfunction
+
+%function getParamAddr_4_9_0_3_1_59(opaqueBlock, block, lcv, ucv, sigIdx, reim) void
+
+%return "&controlador_predictivo_neural_network_P.DiscreteStateSpace1_D"
+%endfunction
+
+%function getParam_4_9_0_3_1_59(opaqueBlock, block, lcv, ucv, sigIdx, reim) void
+
+%return "controlador_predictivo_neural_network_P.DiscreteStateSpace1_D"
+%endfunction
+
+%function getParamAddr_4_9_0_3_1_60(opaqueBlock, block, lcv, ucv, sigIdx, reim) void
+
+%return "&controlador_predictivo_neural_network_P.DiscreteStateSpace1_InitialCond"
+%endfunction
+
+%function getParam_4_9_0_3_1_60(opaqueBlock, block, lcv, ucv, sigIdx, reim) void
+
+%return "controlador_predictivo_neural_network_P.DiscreteStateSpace1_InitialCond"
+%endfunction
+
+%function getInputAddr_4_10_0_3_0_0(opaqueBlock, block, lcv, ucv, sigIdx, reim) void
+%<SLibCGIRAccessLocalVar(2, 0, "")> %% rtb_UnitDelay1
+
+%return "&rtb_UnitDelay1"
+%endfunction
+
+%function getInput_4_10_0_3_0_0(opaqueBlock, block, lcv, ucv, sigIdx, reim) void
+%<SLibCGIRAccessLocalVar(2, 0, "")> %% rtb_UnitDelay1
+
+%return "rtb_UnitDelay1"
+%endfunction
+
+%function getOutputAddr_4_10_0_3_0_0(opaqueBlock, block, lcv, ucv, sigIdx, reim) void
+%<SLibCGIRAccessLocalVar(14, 0, "")> %% rtb_DiscreteStateSpace2
+
+%return "&rtb_DiscreteStateSpace2" + SLibCG_ArrayIndexer(ucv, lcv, sigIdx)
+%endfunction
+
+%function getOutput_4_10_0_3_0_0(opaqueBlock, block, lcv, ucv, sigIdx, reim) void
+%<SLibCGIRAccessLocalVar(14, 0, "")> %% rtb_DiscreteStateSpace2
+
+%return "rtb_DiscreteStateSpace2" + SLibCG_ArrayIndexer(ucv, lcv, sigIdx)
+%endfunction
+
+%function getDWorkAddr_4_10_0_3_0_0(opaqueBlock, block, lcv, ucv, sigIdx, reim) void
+
+%return "&controlador_predictivo_neural_network_DW.DiscreteStateSpace2_DSTATE"
+%endfunction
+
+%function getDWork_4_10_0_3_0_0(opaqueBlock, block, lcv, ucv, sigIdx, reim) void
+
+%return "controlador_predictivo_neural_network_DW.DiscreteStateSpace2_DSTATE"
+%endfunction
+
+%function getParamAddr_4_10_0_3_1_62(opaqueBlock, block, lcv, ucv, sigIdx, reim) void
+
+%return "&controlador_predictivo_neural_network_P.DiscreteStateSpace2_A"
+%endfunction
+
+%function getParam_4_10_0_3_1_62(opaqueBlock, block, lcv, ucv, sigIdx, reim) void
+
+%return "controlador_predictivo_neural_network_P.DiscreteStateSpace2_A"
+%endfunction
+
+%function getParamAddr_4_10_0_3_1_63(opaqueBlock, block, lcv, ucv, sigIdx, reim) void
+
+%return "&controlador_predictivo_neural_network_P.DiscreteStateSpace2_C"
+%endfunction
+
+%function getParam_4_10_0_3_1_63(opaqueBlock, block, lcv, ucv, sigIdx, reim) void
+
+%return "controlador_predictivo_neural_network_P.DiscreteStateSpace2_C"
+%endfunction
+
+%function getParamAddr_4_10_0_3_1_64(opaqueBlock, block, lcv, ucv, sigIdx, reim) void
+
+%return "&controlador_predictivo_neural_network_P.DiscreteStateSpace2_D"
+%endfunction
+
+%function getParam_4_10_0_3_1_64(opaqueBlock, block, lcv, ucv, sigIdx, reim) void
+
+%return "controlador_predictivo_neural_network_P.DiscreteStateSpace2_D"
+%endfunction
+
+%function getParamAddr_4_10_0_3_1_65(opaqueBlock, block, lcv, ucv, sigIdx, reim) void
+
+%return "&controlador_predictivo_neural_network_P.DiscreteStateSpace2_InitialCond"
+%endfunction
+
+%function getParam_4_10_0_3_1_65(opaqueBlock, block, lcv, ucv, sigIdx, reim) void
+
+%return "controlador_predictivo_neural_network_P.DiscreteStateSpace2_InitialCond"
+%endfunction
+
+%function getInputAddr_4_7_0_4_0_0(opaqueBlock, block, lcv, ucv, sigIdx, reim) void
+
+%return "&controlador_predictivo_neural_network_B.TmpSignalConversionAtSFunctionI" + SLibCG_ArrayIndexer(ucv, lcv, sigIdx)
+%endfunction
+
+%function getInput_4_7_0_4_0_0(opaqueBlock, block, lcv, ucv, sigIdx, reim) void
+
+%return "controlador_predictivo_neural_network_B.TmpSignalConversionAtSFunctionI" + SLibCG_ArrayIndexer(ucv, lcv, sigIdx)
+%endfunction
+
+%function getOutputAddr_4_7_0_4_0_0(opaqueBlock, block, lcv, ucv, sigIdx, reim) void
+
+%return "&controlador_predictivo_neural_network_B.SFunction"
+%endfunction
+
+%function getOutput_4_7_0_4_0_0(opaqueBlock, block, lcv, ucv, sigIdx, reim) void
+
+%return "controlador_predictivo_neural_network_B.SFunction"
+%endfunction
+
+%function getDWorkAddr_4_7_0_4_0_0(opaqueBlock, block, lcv, ucv, sigIdx, reim) void
+
+%return "&controlador_predictivo_neural_network_DW.SFunction_DSTATE" + SLibCG_ArrayIndexer(ucv, lcv, sigIdx)
+%endfunction
+
+%function getDWork_4_7_0_4_0_0(opaqueBlock, block, lcv, ucv, sigIdx, reim) void
+
+%return "controlador_predictivo_neural_network_DW.SFunction_DSTATE" + SLibCG_ArrayIndexer(ucv, lcv, sigIdx)
+%endfunction
+
+%function getParamAddr_4_7_0_4_1_13(opaqueBlock, block, lcv, ucv, sigIdx, reim) void
+
+%return "&controlador_predictivo_neural_network_P.SFunction_P1"
+%endfunction
+
+%function getParam_4_7_0_4_1_13(opaqueBlock, block, lcv, ucv, sigIdx, reim) void
+
+%return "controlador_predictivo_neural_network_P.SFunction_P1"
+%endfunction
+
+%function getParamAddr_4_7_0_4_1_15(opaqueBlock, block, lcv, ucv, sigIdx, reim) void
+
+%return "&controlador_predictivo_neural_network_P.SFunction_P2"
+%endfunction
+
+%function getParam_4_7_0_4_1_15(opaqueBlock, block, lcv, ucv, sigIdx, reim) void
+
+%return "controlador_predictivo_neural_network_P.SFunction_P2"
+%endfunction
+
+%function getParamAddr_4_7_0_4_1_17(opaqueBlock, block, lcv, ucv, sigIdx, reim) void
+
+%return "&controlador_predictivo_neural_network_P.SFunction_P3"
+%endfunction
+
+%function getParam_4_7_0_4_1_17(opaqueBlock, block, lcv, ucv, sigIdx, reim) void
+
+%return "controlador_predictivo_neural_network_P.SFunction_P3"
+%endfunction
+
+%function getParamAddr_4_7_0_4_1_19(opaqueBlock, block, lcv, ucv, sigIdx, reim) void
+
+%return "&controlador_predictivo_neural_network_P.SFunction_P4"
+%endfunction
+
+%function getParam_4_7_0_4_1_19(opaqueBlock, block, lcv, ucv, sigIdx, reim) void
+
+%return "controlador_predictivo_neural_network_P.SFunction_P4"
+%endfunction
+
+%function getParamAddr_4_7_0_4_1_21(opaqueBlock, block, lcv, ucv, sigIdx, reim) void
+
+%return "&controlador_predictivo_neural_network_P.SFunction_P5"
+%endfunction
+
+%function getParam_4_7_0_4_1_21(opaqueBlock, block, lcv, ucv, sigIdx, reim) void
+
+%return "controlador_predictivo_neural_network_P.SFunction_P5"
+%endfunction
+
+%function getParamAddr_4_7_0_4_1_23(opaqueBlock, block, lcv, ucv, sigIdx, reim) void
+
+%return "&controlador_predictivo_neural_network_P.SFunction_P6"
+%endfunction
+
+%function getParam_4_7_0_4_1_23(opaqueBlock, block, lcv, ucv, sigIdx, reim) void
+
+%return "controlador_predictivo_neural_network_P.SFunction_P6"
+%endfunction
+
+%function getParamAddr_4_7_0_4_1_25(opaqueBlock, block, lcv, ucv, sigIdx, reim) void
+
+%return "&controlador_predictivo_neural_network_P.SFunction_P7"
+%endfunction
+
+%function getParam_4_7_0_4_1_25(opaqueBlock, block, lcv, ucv, sigIdx, reim) void
+
+%return "controlador_predictivo_neural_network_P.SFunction_P7"
+%endfunction
+
+%function getParamAddr_4_7_0_4_1_27(opaqueBlock, block, lcv, ucv, sigIdx, reim) void
+
+%return "&controlador_predictivo_neural_network_P.SFunction_P8"
+%endfunction
+
+%function getParam_4_7_0_4_1_27(opaqueBlock, block, lcv, ucv, sigIdx, reim) void
+
+%return "controlador_predictivo_neural_network_P.SFunction_P8"
+%endfunction
+
+%function getParamAddr_4_7_0_4_1_29(opaqueBlock, block, lcv, ucv, sigIdx, reim) void
+
+%return "&controlador_predictivo_neural_network_P.SFunction_P9"
+%endfunction
+
+%function getParam_4_7_0_4_1_29(opaqueBlock, block, lcv, ucv, sigIdx, reim) void
+
+%return "controlador_predictivo_neural_network_P.SFunction_P9"
+%endfunction
+
+%function getParamAddr_4_7_0_4_1_31(opaqueBlock, block, lcv, ucv, sigIdx, reim) void
+
+%return "&controlador_predictivo_neural_network_P.SFunction_P10"
+%endfunction
+
+%function getParam_4_7_0_4_1_31(opaqueBlock, block, lcv, ucv, sigIdx, reim) void
+
+%return "controlador_predictivo_neural_network_P.SFunction_P10"
+%endfunction
+
+%function getParamAddr_4_7_0_4_1_33(opaqueBlock, block, lcv, ucv, sigIdx, reim) void
+
+%return "&controlador_predictivo_neural_network_P.SFunction_P11"
+%endfunction
+
+%function getParam_4_7_0_4_1_33(opaqueBlock, block, lcv, ucv, sigIdx, reim) void
+
+%return "controlador_predictivo_neural_network_P.SFunction_P11"
+%endfunction
+
+%function getParamAddr_4_7_0_4_1_35(opaqueBlock, block, lcv, ucv, sigIdx, reim) void
+
+%return "&controlador_predictivo_neural_network_P.SFunction_P12"
+%endfunction
+
+%function getParam_4_7_0_4_1_35(opaqueBlock, block, lcv, ucv, sigIdx, reim) void
+
+%return "controlador_predictivo_neural_network_P.SFunction_P12"
+%endfunction
+
+%function getParamAddr_4_7_0_4_1_37(opaqueBlock, block, lcv, ucv, sigIdx, reim) void
+
+%return "&controlador_predictivo_neural_network_P.SFunction_P13"
+%endfunction
+
+%function getParam_4_7_0_4_1_37(opaqueBlock, block, lcv, ucv, sigIdx, reim) void
+
+%return "controlador_predictivo_neural_network_P.SFunction_P13"
+%endfunction
+
+%function getParamAddr_4_7_0_4_1_39(opaqueBlock, block, lcv, ucv, sigIdx, reim) void
+
+%return "&controlador_predictivo_neural_network_P.SFunction_P14"
+%endfunction
+
+%function getParam_4_7_0_4_1_39(opaqueBlock, block, lcv, ucv, sigIdx, reim) void
+
+%return "controlador_predictivo_neural_network_P.SFunction_P14"
+%endfunction
+
+%function getParamAddr_4_7_0_4_1_41(opaqueBlock, block, lcv, ucv, sigIdx, reim) void
+
+%return "&controlador_predictivo_neural_network_P.SFunction_P15"
+%endfunction
+
+%function getParam_4_7_0_4_1_41(opaqueBlock, block, lcv, ucv, sigIdx, reim) void
+
+%return "controlador_predictivo_neural_network_P.SFunction_P15"
+%endfunction
+
+%function getParamAddr_4_7_0_4_1_43(opaqueBlock, block, lcv, ucv, sigIdx, reim) void
+
+%return "&controlador_predictivo_neural_network_P.SFunction_P16"
+%endfunction
+
+%function getParam_4_7_0_4_1_43(opaqueBlock, block, lcv, ucv, sigIdx, reim) void
+
+%return "controlador_predictivo_neural_network_P.SFunction_P16"
+%endfunction
+
+%function getParamAddr_4_7_0_4_1_45(opaqueBlock, block, lcv, ucv, sigIdx, reim) void
+
+%return "&controlador_predictivo_neural_network_P.SFunction_P17"
+%endfunction
+
+%function getParam_4_7_0_4_1_45(opaqueBlock, block, lcv, ucv, sigIdx, reim) void
+
+%return "controlador_predictivo_neural_network_P.SFunction_P17"
+%endfunction
+
+%function getParamAddr_4_7_0_4_1_47(opaqueBlock, block, lcv, ucv, sigIdx, reim) void
+
+%return "&controlador_predictivo_neural_network_P.SFunction_P18"
+%endfunction
+
+%function getParam_4_7_0_4_1_47(opaqueBlock, block, lcv, ucv, sigIdx, reim) void
+
+%return "controlador_predictivo_neural_network_P.SFunction_P18"
+%endfunction
+
+%function getParamAddr_4_7_0_4_1_49(opaqueBlock, block, lcv, ucv, sigIdx, reim) void
+
+%return "&controlador_predictivo_neural_network_P.SFunction_P19"
+%endfunction
+
+%function getParam_4_7_0_4_1_49(opaqueBlock, block, lcv, ucv, sigIdx, reim) void
+
+%return "controlador_predictivo_neural_network_P.SFunction_P19"
+%endfunction
+
+%function getParamAddr_4_7_0_4_1_51(opaqueBlock, block, lcv, ucv, sigIdx, reim) void
+
+%return "&controlador_predictivo_neural_network_P.SFunction_P20"
+%endfunction
+
+%function getParam_4_7_0_4_1_51(opaqueBlock, block, lcv, ucv, sigIdx, reim) void
+
+%return "controlador_predictivo_neural_network_P.SFunction_P20"
+%endfunction
+
+%function getParamAddr_4_7_0_4_1_53(opaqueBlock, block, lcv, ucv, sigIdx, reim) void
+
+%return "&controlador_predictivo_neural_network_P.SFunction_P21"
+%endfunction
+
+%function getParam_4_7_0_4_1_53(opaqueBlock, block, lcv, ucv, sigIdx, reim) void
+
+%return "controlador_predictivo_neural_network_P.SFunction_P21"
+%endfunction
+
+%function getParamAddr_4_7_0_4_1_55(opaqueBlock, block, lcv, ucv, sigIdx, reim) void
+
+%return "&controlador_predictivo_neural_network_P.SFunction_P22"
+%endfunction
+
+%function getParam_4_7_0_4_1_55(opaqueBlock, block, lcv, ucv, sigIdx, reim) void
+
+%return "controlador_predictivo_neural_network_P.SFunction_P22"
+%endfunction
+
+%function getInputAddr_4_9_0_4_0_0(opaqueBlock, block, lcv, ucv, sigIdx, reim) void
+%<SLibCGIRAccessLocalVar(1, 0, "")> %% rtb_Switch
+
+%return "&rtb_Switch"
+%endfunction
+
+%function getInput_4_9_0_4_0_0(opaqueBlock, block, lcv, ucv, sigIdx, reim) void
+%<SLibCGIRAccessLocalVar(1, 0, "")> %% rtb_Switch
+
+%return "rtb_Switch"
+%endfunction
+
+%function getOutputAddr_4_9_0_4_0_0(opaqueBlock, block, lcv, ucv, sigIdx, reim) void
+%<SLibCGIRAccessLocalVar(13, 0, "")> %% rtb_DiscreteStateSpace1
+
+%return "&rtb_DiscreteStateSpace1" + SLibCG_ArrayIndexer(ucv, lcv, sigIdx)
+%endfunction
+
+%function getOutput_4_9_0_4_0_0(opaqueBlock, block, lcv, ucv, sigIdx, reim) void
+%<SLibCGIRAccessLocalVar(13, 0, "")> %% rtb_DiscreteStateSpace1
+
+%return "rtb_DiscreteStateSpace1" + SLibCG_ArrayIndexer(ucv, lcv, sigIdx)
+%endfunction
+
+%function getDWorkAddr_4_9_0_4_0_0(opaqueBlock, block, lcv, ucv, sigIdx, reim) void
+
+%return "&controlador_predictivo_neural_network_DW.DiscreteStateSpace1_DSTATE"
+%endfunction
+
+%function getDWork_4_9_0_4_0_0(opaqueBlock, block, lcv, ucv, sigIdx, reim) void
+
+%return "controlador_predictivo_neural_network_DW.DiscreteStateSpace1_DSTATE"
+%endfunction
+
+%function getParamAddr_4_9_0_4_1_57(opaqueBlock, block, lcv, ucv, sigIdx, reim) void
+
+%return "&controlador_predictivo_neural_network_P.DiscreteStateSpace1_A"
+%endfunction
+
+%function getParam_4_9_0_4_1_57(opaqueBlock, block, lcv, ucv, sigIdx, reim) void
+
+%return "controlador_predictivo_neural_network_P.DiscreteStateSpace1_A"
+%endfunction
+
+%function getParamAddr_4_9_0_4_1_58(opaqueBlock, block, lcv, ucv, sigIdx, reim) void
+
+%return "&controlador_predictivo_neural_network_P.DiscreteStateSpace1_C"
+%endfunction
+
+%function getParam_4_9_0_4_1_58(opaqueBlock, block, lcv, ucv, sigIdx, reim) void
+
+%return "controlador_predictivo_neural_network_P.DiscreteStateSpace1_C"
+%endfunction
+
+%function getParamAddr_4_9_0_4_1_59(opaqueBlock, block, lcv, ucv, sigIdx, reim) void
+
+%return "&controlador_predictivo_neural_network_P.DiscreteStateSpace1_D"
+%endfunction
+
+%function getParam_4_9_0_4_1_59(opaqueBlock, block, lcv, ucv, sigIdx, reim) void
+
+%return "controlador_predictivo_neural_network_P.DiscreteStateSpace1_D"
+%endfunction
+
+%function getParamAddr_4_9_0_4_1_60(opaqueBlock, block, lcv, ucv, sigIdx, reim) void
+
+%return "&controlador_predictivo_neural_network_P.DiscreteStateSpace1_InitialCond"
+%endfunction
+
+%function getParam_4_9_0_4_1_60(opaqueBlock, block, lcv, ucv, sigIdx, reim) void
+
+%return "controlador_predictivo_neural_network_P.DiscreteStateSpace1_InitialCond"
+%endfunction
+
+%function getInputAddr_4_10_0_4_0_0(opaqueBlock, block, lcv, ucv, sigIdx, reim) void
+%<SLibCGIRAccessLocalVar(2, 0, "")> %% rtb_UnitDelay1
+
+%return "&rtb_UnitDelay1"
+%endfunction
+
+%function getInput_4_10_0_4_0_0(opaqueBlock, block, lcv, ucv, sigIdx, reim) void
+%<SLibCGIRAccessLocalVar(2, 0, "")> %% rtb_UnitDelay1
+
+%return "rtb_UnitDelay1"
+%endfunction
+
+%function getOutputAddr_4_10_0_4_0_0(opaqueBlock, block, lcv, ucv, sigIdx, reim) void
+%<SLibCGIRAccessLocalVar(14, 0, "")> %% rtb_DiscreteStateSpace2
+
+%return "&rtb_DiscreteStateSpace2" + SLibCG_ArrayIndexer(ucv, lcv, sigIdx)
+%endfunction
+
+%function getOutput_4_10_0_4_0_0(opaqueBlock, block, lcv, ucv, sigIdx, reim) void
+%<SLibCGIRAccessLocalVar(14, 0, "")> %% rtb_DiscreteStateSpace2
+
+%return "rtb_DiscreteStateSpace2" + SLibCG_ArrayIndexer(ucv, lcv, sigIdx)
+%endfunction
+
+%function getDWorkAddr_4_10_0_4_0_0(opaqueBlock, block, lcv, ucv, sigIdx, reim) void
+
+%return "&controlador_predictivo_neural_network_DW.DiscreteStateSpace2_DSTATE"
+%endfunction
+
+%function getDWork_4_10_0_4_0_0(opaqueBlock, block, lcv, ucv, sigIdx, reim) void
+
+%return "controlador_predictivo_neural_network_DW.DiscreteStateSpace2_DSTATE"
+%endfunction
+
+%function getParamAddr_4_10_0_4_1_62(opaqueBlock, block, lcv, ucv, sigIdx, reim) void
+
+%return "&controlador_predictivo_neural_network_P.DiscreteStateSpace2_A"
+%endfunction
+
+%function getParam_4_10_0_4_1_62(opaqueBlock, block, lcv, ucv, sigIdx, reim) void
+
+%return "controlador_predictivo_neural_network_P.DiscreteStateSpace2_A"
+%endfunction
+
+%function getParamAddr_4_10_0_4_1_63(opaqueBlock, block, lcv, ucv, sigIdx, reim) void
+
+%return "&controlador_predictivo_neural_network_P.DiscreteStateSpace2_C"
+%endfunction
+
+%function getParam_4_10_0_4_1_63(opaqueBlock, block, lcv, ucv, sigIdx, reim) void
+
+%return "controlador_predictivo_neural_network_P.DiscreteStateSpace2_C"
+%endfunction
+
+%function getParamAddr_4_10_0_4_1_64(opaqueBlock, block, lcv, ucv, sigIdx, reim) void
+
+%return "&controlador_predictivo_neural_network_P.DiscreteStateSpace2_D"
+%endfunction
+
+%function getParam_4_10_0_4_1_64(opaqueBlock, block, lcv, ucv, sigIdx, reim) void
+
+%return "controlador_predictivo_neural_network_P.DiscreteStateSpace2_D"
+%endfunction
+
+%function getParamAddr_4_10_0_4_1_65(opaqueBlock, block, lcv, ucv, sigIdx, reim) void
+
+%return "&controlador_predictivo_neural_network_P.DiscreteStateSpace2_InitialCond"
+%endfunction
+
+%function getParam_4_10_0_4_1_65(opaqueBlock, block, lcv, ucv, sigIdx, reim) void
+
+%return "controlador_predictivo_neural_network_P.DiscreteStateSpace2_InitialCond"
+%endfunction
+
+%function getInputAddr_4_7_0_7_0_0(opaqueBlock, block, lcv, ucv, sigIdx, reim) void
+
+%return "&controlador_predictivo_neural_network_B.TmpSignalConversionAtSFunctionI" + SLibCG_ArrayIndexer(ucv, lcv, sigIdx)
+%endfunction
+
+%function getInput_4_7_0_7_0_0(opaqueBlock, block, lcv, ucv, sigIdx, reim) void
+
+%return "controlador_predictivo_neural_network_B.TmpSignalConversionAtSFunctionI" + SLibCG_ArrayIndexer(ucv, lcv, sigIdx)
+%endfunction
+
+%function getOutputAddr_4_7_0_7_0_0(opaqueBlock, block, lcv, ucv, sigIdx, reim) void
+
+%return "&controlador_predictivo_neural_network_B.SFunction"
+%endfunction
+
+%function getOutput_4_7_0_7_0_0(opaqueBlock, block, lcv, ucv, sigIdx, reim) void
+
+%return "controlador_predictivo_neural_network_B.SFunction"
+%endfunction
+
+%function getDWorkAddr_4_7_0_7_0_0(opaqueBlock, block, lcv, ucv, sigIdx, reim) void
+
+%return "&controlador_predictivo_neural_network_DW.SFunction_DSTATE" + SLibCG_ArrayIndexer(ucv, lcv, sigIdx)
+%endfunction
+
+%function getDWork_4_7_0_7_0_0(opaqueBlock, block, lcv, ucv, sigIdx, reim) void
+
+%return "controlador_predictivo_neural_network_DW.SFunction_DSTATE" + SLibCG_ArrayIndexer(ucv, lcv, sigIdx)
+%endfunction
+
+%function getParamAddr_4_7_0_7_1_13(opaqueBlock, block, lcv, ucv, sigIdx, reim) void
+
+%return "&controlador_predictivo_neural_network_P.SFunction_P1"
+%endfunction
+
+%function getParam_4_7_0_7_1_13(opaqueBlock, block, lcv, ucv, sigIdx, reim) void
+
+%return "controlador_predictivo_neural_network_P.SFunction_P1"
+%endfunction
+
+%function getParamAddr_4_7_0_7_1_15(opaqueBlock, block, lcv, ucv, sigIdx, reim) void
+
+%return "&controlador_predictivo_neural_network_P.SFunction_P2"
+%endfunction
+
+%function getParam_4_7_0_7_1_15(opaqueBlock, block, lcv, ucv, sigIdx, reim) void
+
+%return "controlador_predictivo_neural_network_P.SFunction_P2"
+%endfunction
+
+%function getParamAddr_4_7_0_7_1_17(opaqueBlock, block, lcv, ucv, sigIdx, reim) void
+
+%return "&controlador_predictivo_neural_network_P.SFunction_P3"
+%endfunction
+
+%function getParam_4_7_0_7_1_17(opaqueBlock, block, lcv, ucv, sigIdx, reim) void
+
+%return "controlador_predictivo_neural_network_P.SFunction_P3"
+%endfunction
+
+%function getParamAddr_4_7_0_7_1_19(opaqueBlock, block, lcv, ucv, sigIdx, reim) void
+
+%return "&controlador_predictivo_neural_network_P.SFunction_P4"
+%endfunction
+
+%function getParam_4_7_0_7_1_19(opaqueBlock, block, lcv, ucv, sigIdx, reim) void
+
+%return "controlador_predictivo_neural_network_P.SFunction_P4"
+%endfunction
+
+%function getParamAddr_4_7_0_7_1_21(opaqueBlock, block, lcv, ucv, sigIdx, reim) void
+
+%return "&controlador_predictivo_neural_network_P.SFunction_P5"
+%endfunction
+
+%function getParam_4_7_0_7_1_21(opaqueBlock, block, lcv, ucv, sigIdx, reim) void
+
+%return "controlador_predictivo_neural_network_P.SFunction_P5"
+%endfunction
+
+%function getParamAddr_4_7_0_7_1_23(opaqueBlock, block, lcv, ucv, sigIdx, reim) void
+
+%return "&controlador_predictivo_neural_network_P.SFunction_P6"
+%endfunction
+
+%function getParam_4_7_0_7_1_23(opaqueBlock, block, lcv, ucv, sigIdx, reim) void
+
+%return "controlador_predictivo_neural_network_P.SFunction_P6"
+%endfunction
+
+%function getParamAddr_4_7_0_7_1_25(opaqueBlock, block, lcv, ucv, sigIdx, reim) void
+
+%return "&controlador_predictivo_neural_network_P.SFunction_P7"
+%endfunction
+
+%function getParam_4_7_0_7_1_25(opaqueBlock, block, lcv, ucv, sigIdx, reim) void
+
+%return "controlador_predictivo_neural_network_P.SFunction_P7"
+%endfunction
+
+%function getParamAddr_4_7_0_7_1_27(opaqueBlock, block, lcv, ucv, sigIdx, reim) void
+
+%return "&controlador_predictivo_neural_network_P.SFunction_P8"
+%endfunction
+
+%function getParam_4_7_0_7_1_27(opaqueBlock, block, lcv, ucv, sigIdx, reim) void
+
+%return "controlador_predictivo_neural_network_P.SFunction_P8"
+%endfunction
+
+%function getParamAddr_4_7_0_7_1_29(opaqueBlock, block, lcv, ucv, sigIdx, reim) void
+
+%return "&controlador_predictivo_neural_network_P.SFunction_P9"
+%endfunction
+
+%function getParam_4_7_0_7_1_29(opaqueBlock, block, lcv, ucv, sigIdx, reim) void
+
+%return "controlador_predictivo_neural_network_P.SFunction_P9"
+%endfunction
+
+%function getParamAddr_4_7_0_7_1_31(opaqueBlock, block, lcv, ucv, sigIdx, reim) void
+
+%return "&controlador_predictivo_neural_network_P.SFunction_P10"
+%endfunction
+
+%function getParam_4_7_0_7_1_31(opaqueBlock, block, lcv, ucv, sigIdx, reim) void
+
+%return "controlador_predictivo_neural_network_P.SFunction_P10"
+%endfunction
+
+%function getParamAddr_4_7_0_7_1_33(opaqueBlock, block, lcv, ucv, sigIdx, reim) void
+
+%return "&controlador_predictivo_neural_network_P.SFunction_P11"
+%endfunction
+
+%function getParam_4_7_0_7_1_33(opaqueBlock, block, lcv, ucv, sigIdx, reim) void
+
+%return "controlador_predictivo_neural_network_P.SFunction_P11"
+%endfunction
+
+%function getParamAddr_4_7_0_7_1_35(opaqueBlock, block, lcv, ucv, sigIdx, reim) void
+
+%return "&controlador_predictivo_neural_network_P.SFunction_P12"
+%endfunction
+
+%function getParam_4_7_0_7_1_35(opaqueBlock, block, lcv, ucv, sigIdx, reim) void
+
+%return "controlador_predictivo_neural_network_P.SFunction_P12"
+%endfunction
+
+%function getParamAddr_4_7_0_7_1_37(opaqueBlock, block, lcv, ucv, sigIdx, reim) void
+
+%return "&controlador_predictivo_neural_network_P.SFunction_P13"
+%endfunction
+
+%function getParam_4_7_0_7_1_37(opaqueBlock, block, lcv, ucv, sigIdx, reim) void
+
+%return "controlador_predictivo_neural_network_P.SFunction_P13"
+%endfunction
+
+%function getParamAddr_4_7_0_7_1_39(opaqueBlock, block, lcv, ucv, sigIdx, reim) void
+
+%return "&controlador_predictivo_neural_network_P.SFunction_P14"
+%endfunction
+
+%function getParam_4_7_0_7_1_39(opaqueBlock, block, lcv, ucv, sigIdx, reim) void
+
+%return "controlador_predictivo_neural_network_P.SFunction_P14"
+%endfunction
+
+%function getParamAddr_4_7_0_7_1_41(opaqueBlock, block, lcv, ucv, sigIdx, reim) void
+
+%return "&controlador_predictivo_neural_network_P.SFunction_P15"
+%endfunction
+
+%function getParam_4_7_0_7_1_41(opaqueBlock, block, lcv, ucv, sigIdx, reim) void
+
+%return "controlador_predictivo_neural_network_P.SFunction_P15"
+%endfunction
+
+%function getParamAddr_4_7_0_7_1_43(opaqueBlock, block, lcv, ucv, sigIdx, reim) void
+
+%return "&controlador_predictivo_neural_network_P.SFunction_P16"
+%endfunction
+
+%function getParam_4_7_0_7_1_43(opaqueBlock, block, lcv, ucv, sigIdx, reim) void
+
+%return "controlador_predictivo_neural_network_P.SFunction_P16"
+%endfunction
+
+%function getParamAddr_4_7_0_7_1_45(opaqueBlock, block, lcv, ucv, sigIdx, reim) void
+
+%return "&controlador_predictivo_neural_network_P.SFunction_P17"
+%endfunction
+
+%function getParam_4_7_0_7_1_45(opaqueBlock, block, lcv, ucv, sigIdx, reim) void
+
+%return "controlador_predictivo_neural_network_P.SFunction_P17"
+%endfunction
+
+%function getParamAddr_4_7_0_7_1_47(opaqueBlock, block, lcv, ucv, sigIdx, reim) void
+
+%return "&controlador_predictivo_neural_network_P.SFunction_P18"
+%endfunction
+
+%function getParam_4_7_0_7_1_47(opaqueBlock, block, lcv, ucv, sigIdx, reim) void
+
+%return "controlador_predictivo_neural_network_P.SFunction_P18"
+%endfunction
+
+%function getParamAddr_4_7_0_7_1_49(opaqueBlock, block, lcv, ucv, sigIdx, reim) void
+
+%return "&controlador_predictivo_neural_network_P.SFunction_P19"
+%endfunction
+
+%function getParam_4_7_0_7_1_49(opaqueBlock, block, lcv, ucv, sigIdx, reim) void
+
+%return "controlador_predictivo_neural_network_P.SFunction_P19"
+%endfunction
+
+%function getParamAddr_4_7_0_7_1_51(opaqueBlock, block, lcv, ucv, sigIdx, reim) void
+
+%return "&controlador_predictivo_neural_network_P.SFunction_P20"
+%endfunction
+
+%function getParam_4_7_0_7_1_51(opaqueBlock, block, lcv, ucv, sigIdx, reim) void
+
+%return "controlador_predictivo_neural_network_P.SFunction_P20"
+%endfunction
+
+%function getParamAddr_4_7_0_7_1_53(opaqueBlock, block, lcv, ucv, sigIdx, reim) void
+
+%return "&controlador_predictivo_neural_network_P.SFunction_P21"
+%endfunction
+
+%function getParam_4_7_0_7_1_53(opaqueBlock, block, lcv, ucv, sigIdx, reim) void
+
+%return "controlador_predictivo_neural_network_P.SFunction_P21"
+%endfunction
+
+%function getParamAddr_4_7_0_7_1_55(opaqueBlock, block, lcv, ucv, sigIdx, reim) void
+
+%return "&controlador_predictivo_neural_network_P.SFunction_P22"
+%endfunction
+
+%function getParam_4_7_0_7_1_55(opaqueBlock, block, lcv, ucv, sigIdx, reim) void
+
+%return "controlador_predictivo_neural_network_P.SFunction_P22"
+%endfunction
+

@@ -1,0 +1,27 @@
+%implements s4_b0_xktcd_Terminate "C"
+
+%function Terminate(block, system) Output
+%assign cfgTxt = ""
+%openfile cfgTxt
+%assign localVarDecl = ""
+%assign tlcTerminateFcnOfS4B7 = OpaqueTLCBlockFcn("Terminate", 4, 7, 0, 7)
+%assign tlcCleanupRuntimeResourcesFcnOfS4B7 = OpaqueTLCBlockFcn("CleanupRuntimeResources", 4, 7, 0, 7)
+%if !WHITE_SPACE(tlcTerminateFcnOfS4B7)
+/* Terminate for S-Function (predopt): '<S1>/S-Function' */
+%<tlcTerminateFcnOfS4B7>\
+%endif
+%if !WHITE_SPACE(tlcCleanupRuntimeResourcesFcnOfS4B7)
+/* CleanupRuntimeResources for S-Function (predopt): '<S1>/S-Function' */
+%<tlcCleanupRuntimeResourcesFcnOfS4B7>\
+%endif
+%closefile cfgTxt
+%<cfgTxt>
+%endfunction
+%function TerminateFcnProtoType(block, system) Output
+%assign fcnProtoType = ""
+%openfile fcnProtoType
+static void Terminate(\
+%assign comma = ""
+%closefile fcnProtoType
+%<SLibCG_SetFcnProtoType(0, 7, fcnProtoType)>
+%endfunction

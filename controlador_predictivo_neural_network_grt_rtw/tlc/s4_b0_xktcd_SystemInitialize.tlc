@@ -1,0 +1,71 @@
+%implements s4_b0_xktcd_SystemInitialize "C"
+
+%function SystemInitialize(block, system) Output
+%assign cfgTxt = ""
+%openfile cfgTxt
+%assign localVarDecl = ""
+%openfile localVarDecl
+
+uint32_T tseed;
+int32_T r;
+int32_T t;
+real_T tmp;
+%closefile localVarDecl
+%assign tlcInitializeConditionsFcnOfS4B7 = OpaqueTLCBlockFcn("InitializeConditions", 4, 7, 0, 2)
+%assign tlcInitializeConditionsFcnOfS4B9 = OpaqueTLCBlockFcn("InitializeConditions", 4, 9, 0, 2)
+%assign tlcInitializeConditionsFcnOfS4B10 = OpaqueTLCBlockFcn("InitializeConditions", 4, 10, 0, 2)
+%<SLibInsertAsyncTaskInitializeCode(system)>
+%<SLibWriteMachineInitialize()>
+/* {S!d8}InitializeConditions for Integrator: '<Root>/Integrator1' */
+controlador_predictivo_neural_network_X.Integrator1_CSTATE = controlador_predictivo_neural_network_P.Integrator1_IC;
+/* {S!d10}InitializeConditions for UniformRandomNumber: '<Root>/Random Reference' */
+tmp = floor(controlador_predictivo_neural_network_P.RandomReference_Seed);
+if (rtIsNaN(tmp) || rtIsInf(tmp)) {
+    tmp = 0.0;
+} else {
+    tmp = fmod(tmp, 4.294967296E+9);
+}
+tseed = tmp < 0.0 ? (uint32_T)-(int32_T)(uint32_T)-tmp : (uint32_T)tmp;
+r = (int32_T)(tseed >> 16U);
+t = (int32_T)(tseed & 32768U);
+tseed = ((((tseed - ((uint32_T)r << 16U)) + t) << 16U) + t) + r;
+if (tseed < 1U) {
+    tseed = 1144108930U;
+} else {
+    if (tseed > 2147483646U) {
+        tseed = 2147483646U;
+    }
+}
+controlador_predictivo_neural_network_DW.RandSeed = tseed;
+controlador_predictivo_neural_network_DW.RandomReference_NextOutput = (controlador_predictivo_neural_network_P.RandomReference_Maximum - controlador_predictivo_neural_network_P.RandomReference_Minimum) * %<(SLibCGCallSubFcn("rt_urand_Upu32_Yd_f_pw_snf", ["&controlador_predictivo_neural_network_DW.RandSeed"], 0, 2, 0))> + controlador_predictivo_neural_network_P.RandomReference_Minimum;
+/* {E!d10}End of InitializeConditions for UniformRandomNumber: '<Root>/Random Reference' */
+
+/* {S!d12}InitializeConditions for Integrator: '<Root>/Integrator' */
+controlador_predictivo_neural_network_X.Integrator_CSTATE = controlador_predictivo_neural_network_P.Integrator_IC;
+%if !WHITE_SPACE(tlcInitializeConditionsFcnOfS4B7)
+/* {S!d14}InitializeConditions for S-Function (predopt): '<S1>/S-Function' */
+%<tlcInitializeConditionsFcnOfS4B7>\
+%endif
+%if !WHITE_SPACE(tlcInitializeConditionsFcnOfS4B9)
+/* {S!d16}InitializeConditions for DiscreteStateSpace: '<S3>/Discrete State-Space1' */
+%<tlcInitializeConditionsFcnOfS4B9>\
+%endif
+/* {S!d18}InitializeConditions for UnitDelay: '<S3>/Unit Delay1' */
+controlador_predictivo_neural_network_DW.UnitDelay1_DSTATE = controlador_predictivo_neural_network_P.UnitDelay1_InitialCondition;
+%if !WHITE_SPACE(tlcInitializeConditionsFcnOfS4B10)
+/* {S!d20}InitializeConditions for DiscreteStateSpace: '<S3>/Discrete State-Space2' */
+%<tlcInitializeConditionsFcnOfS4B10>\
+%endif
+%<SLibInsertInitPeriodicCStatesFcn(system)>
+%closefile cfgTxt
+%<cfgTxt>
+%<LibSetSystemField(system, "CachedSystemInitializeLocalVars", localVarDecl)>
+%endfunction
+%function SystemInitializeFcnProtoType(block, system) Output
+%assign fcnProtoType = ""
+%openfile fcnProtoType
+static void SystemInitialize(\
+%assign comma = ""
+%closefile fcnProtoType
+%<SLibCG_SetFcnProtoType(0, 2, fcnProtoType)>
+%endfunction

@@ -1,0 +1,40 @@
+%implements s4_b0_xktcd_Update "C"
+
+%function Update(block, system) Output
+%assign cfgTxt = ""
+%openfile cfgTxt
+%assign localVarDecl = ""
+%assign tlcUpdateFcnOfS4B7 = OpaqueTLCBlockFcn("Update", 4, 7, 0, 4)
+%assign tlcUpdateFcnOfS4B9 = OpaqueTLCBlockFcn("Update", 4, 9, 0, 4)
+%assign tlcUpdateFcnOfS4B10 = OpaqueTLCBlockFcn("Update", 4, 10, 0, 4)
+if (%<(SLibCGIRIsSampleHit(2, 4))>) {
+    /* {S!d56}Update for UniformRandomNumber: '<Root>/Random Reference' */
+    controlador_predictivo_neural_network_DW.RandomReference_NextOutput = (controlador_predictivo_neural_network_P.RandomReference_Maximum - controlador_predictivo_neural_network_P.RandomReference_Minimum) * %<(SLibCGCallSubFcn("rt_urand_Upu32_Yd_f_pw_snf", ["&controlador_predictivo_neural_network_DW.RandSeed"], 0, 4, 0))> + controlador_predictivo_neural_network_P.RandomReference_Minimum;
+}
+if (%<(SLibCGIRIsSampleHit(1, 4))>) {
+%if !WHITE_SPACE(tlcUpdateFcnOfS4B7)
+    /* {S!d58}Update for S-Function (predopt): '<S1>/S-Function' */
+%<tlcUpdateFcnOfS4B7>\
+%endif
+%if !WHITE_SPACE(tlcUpdateFcnOfS4B9)
+    /* {S!d60}Update for DiscreteStateSpace: '<S3>/Discrete State-Space1' */
+%<tlcUpdateFcnOfS4B9>\
+%endif
+    /* {S!d62}Update for UnitDelay: '<S3>/Unit Delay1' */
+    controlador_predictivo_neural_network_DW.UnitDelay1_DSTATE = controlador_predictivo_neural_network_B.Switch1;
+%if !WHITE_SPACE(tlcUpdateFcnOfS4B10)
+    /* {S!d64}Update for DiscreteStateSpace: '<S3>/Discrete State-Space2' */
+%<tlcUpdateFcnOfS4B10>\
+%endif
+}
+%closefile cfgTxt
+%<cfgTxt>
+%endfunction
+%function UpdateFcnProtoType(block, system) Output
+%assign fcnProtoType = ""
+%openfile fcnProtoType
+static void Update(\
+%assign comma = ""
+%closefile fcnProtoType
+%<SLibCG_SetFcnProtoType(0, 4, fcnProtoType)>
+%endfunction
